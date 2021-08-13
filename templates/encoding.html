@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block bodyblock %}
+
+
+
+    <div class="container">
+        <h3>Face Encoding</h3>
+    </div>
+
+    <div class="container">
+        <br>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="upload">Upload</label>
+            <input type="file" id="upload" name="image" required="true">
+            <input type="submit" value="upload">
+        </form>
+
+    </div>
+
+    <div class="container">
+        <textarea rows="10"  class="form-control">{{ result }}</textarea>
+
+    </div>
+
+{% endblock %}
